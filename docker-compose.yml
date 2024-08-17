@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   jira:
-    image: haxqer/jira:9.17.2
+    image: 29trxngxx/jira-custom:latest
     container_name: jira-srv
     environment:
       - TZ=Asia/Ho_Chi_Minh
