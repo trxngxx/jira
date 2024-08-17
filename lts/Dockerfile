@@ -23,6 +23,7 @@ ENV JAVA_OPTS="-javaagent:${AGENT_PATH}/${AGENT_FILENAME} ${JAVA_OPTS}"
 # Install necessary packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
+    apt-transport-https ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p "${JIRA_INSTALL}" "${JIRA_HOME}" "${AGENT_PATH}" \
