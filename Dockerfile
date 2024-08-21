@@ -26,6 +26,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-transport-https ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
+#Copyright (c) 2025 SETA-International-VN. All rights reserved.
+#This code is the property of SETA-International-VN and should not be distributed or used without permission.
+
 RUN mkdir -p "${JIRA_INSTALL}" "${JIRA_HOME}" "${AGENT_PATH}" \
     && curl -o "${AGENT_PATH}/${AGENT_FILENAME}" "https://github.com/haxqer/jira/releases/download/v${AGENT_VERSION}/atlassian-agent.jar" -L \
     && curl -o /tmp/atlassian.tar.gz "https://product-downloads.atlassian.com/software/jira/downloads/atlassian-${JIRA_PRODUCT}-${JIRA_VERSION}.tar.gz" -L \

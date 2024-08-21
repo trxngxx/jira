@@ -33,8 +33,8 @@ services:
     networks:
       - network-bridge
 
-#Copyright (c) 2025 SETA International VN. All rights reserved.
-#This code is the property of SETA International VN and should not be distributed or used without permission.
+#Copyright (c) 2025 SETA-International-VN. All rights reserved.
+#This code is the property of SETA-International-VN and should not be distributed or used without permission.
 
 networks:
   network-bridge:

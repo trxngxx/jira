@@ -34,6 +34,9 @@ RUN mkdir -p "${JIRA_INSTALL}" "${JIRA_HOME}" "${AGENT_PATH}" \
     && curl -o "${JIRA_INSTALL}/lib/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar" "https://repo1.maven.org/maven2/mysql/mysql-connector-java/${MYSQL_DRIVER_VERSION}/mysql-connector-java-${MYSQL_DRIVER_VERSION}.jar" -L \
     && echo "jira.home = ${JIRA_HOME}" > "${JIRA_INSTALL}/atlassian-jira/WEB-INF/classes/jira-application.properties"
 
+#Copyright (c) 2025 SETA-International-VN. All rights reserved.
+#This code is the property of SETA-International-VN and should not be distributed or used without permission.
+
 RUN export CONTAINER_USER="$JIRA_USER" \
     && export CONTAINER_GROUP="$JIRA_GROUP" \
     && groupadd -r "$JIRA_GROUP" && useradd -r -g "$JIRA_GROUP" "$JIRA_USER" \
