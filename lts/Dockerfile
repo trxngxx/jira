@@ -1,5 +1,5 @@
 # Base image
-FROM ubuntu:22.04
+FROM ubuntu:24.10
 
 LABEL maintainer="vinataba <ngo.tran@seta-international.vn>" version="9.12.12"
 
